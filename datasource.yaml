@@ -1,0 +1,12 @@
+apiVersion: 1
+datasources:
+  - name: sysdig
+    type: prometheus
+    access: proxy
+    url: <URL_HERE>
+    basicAuth: false
+    isDefault: true
+    jsonData:
+      httpHeaderName1: Authorization
+    secureJsonData:
+      httpHeaderValue1: Bearer <TOKEN_HERE>
