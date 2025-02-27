@@ -18,7 +18,7 @@ Move the new dashboard json to this directory and rename accordingly.
 Modify the Dockerfile to reference the new dashboard.
 
 Build the image:
-`podman build -t docker.internal.sysdig.com/agent-metrics:0.1 .`
+`podman build -t igoreulalio/agent-metrics:<TAG> .`
 
 Push to the private registry:
-`podman push docker.internal.sysdig.com/agent-metrics:0.1`
+`podman push igoreulalio/agent-metrics:<TAG>`
